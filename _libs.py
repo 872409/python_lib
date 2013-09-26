@@ -1,5 +1,11 @@
+#!/usr/bin/env python
+# coding=utf-8
+#
+# Copyright 2013 laoxu
+
 class ObjectDict(dict):
-    """Makes a dictionary behave like an object, with attribute-style access.
+    """ from tornado.util import ObjectDict
+    Makes a dictionary behave like an object, with attribute-style access.
     """
     def __getattr__(self, name):
         try:
